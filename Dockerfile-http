@@ -12,4 +12,6 @@ ENV SLEEP_COUNT=20
 ARG HTTP_PORT
 ENV HTTP_PORT=8000
 
+RUN apk add curl
+
 CMD ["sh", "-c", "curl 169.254.170.2$AWS_CONTAINER_CREDENTIALS_RELATIVE_URI; python -m http.server $HTTP_PORT & for i in $(seq 1 $SLEEP_COUNT); do echo \"SLEEP ... $i\"; sleep $SLEEP_TIME; done"]
