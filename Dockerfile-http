@@ -1,4 +1,4 @@
-FROM python:alpine3.12
+FROM python:rc-alpine3.12
 
 LABEL maintainer.name="Afonso Rodrigues"
 LABEL maintainer.email=afonsoaugustoventura@gmail.com  
