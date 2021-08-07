@@ -1,4 +1,4 @@
-FROM alpine:3.12
+FROM alpine:3
 
 LABEL maintainer.name="Afonso Rodrigues"
 LABEL maintainer.email=afonsoaugustoventura@gmail.com  
